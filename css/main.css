@@ -3,9 +3,8 @@ body {
 }
 
 :root {
-    --sidebar-width: 10rem;
-    --sidebar-color: rgb(0, 0, 30);
-
+    --sidebar-width: 12vw;
+    --sidebar-color: rgb(1, 1, 80);
 }
 
 .wrapper {
@@ -13,8 +12,12 @@ body {
     background: white;
 }
 
+.navbar {
+    height: 4rem;
+}
+
 main {
-    height: 100%;
+    height: calc(100% - 4rem);
     display: flex;
 }
 
@@ -24,6 +27,7 @@ main > #sidebar {
     width: var(--sidebar-width);
     background-image: url(../img/sidebar-bg.png);
     background-size: contain;
+    color: white;
 }
 
 main > #main-content {

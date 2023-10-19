@@ -43,26 +43,26 @@
                                 <span class="my-input-group-text" id="basic-addon1">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </span>
-                                <input type="search" class="form-control" style="background-color: rgb(230, 230, 230);" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="search" class="form-control" style="background-color: rgb(230, 230, 230); border: solid rgba(230, 230, 230);" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             
                             <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">
-                                        <i class="fa-solid fa-list""></i>
+                                        <i class="fa-solid fa-list ms-2""></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#">
-                                        <i class="fa-solid fa-circle-question"></i>
+                                        <i class="fa-solid fa-circle-question mx-1"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#">
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical me-1-"></i>
                                     </a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <!-- <li class="dropdown-center">
                                     <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-bell" style="color: #ff7b00;"></i>
                                     </a>
@@ -72,7 +72,18 @@
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
+
+                                <div class="dropdown-center">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-bell" style="color: #ff7b00;"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                  </div>
                             </ul>
                         </div>
                     </div>
@@ -84,8 +95,48 @@
             <main>
 
                 <!-- sidebar -->
-                <div id="sidebar">
+                <div id="sidebar" class="text-center d-flex justify-content-center">
+                    <div class="text-center w-50 d-flex flex-column justify-content-between my-3">
+                        <div class="">
+                            <div class="row hover">
+                                <div class="col-4 text-end">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                                <div class="col-8 text-start">
+                                    <p>Home</p>
+                                </div>
+                            </div>
 
+                            <div class="row hover">
+                                <div class="col-4 text-end">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                </div>
+                                <div class="col-8 text-start">
+                                    <p>Stats</p>
+                                </div>
+                            </div>
+
+                            <div class="row hover">
+                                <div class="col-4 text-end">
+                                    <i class="fa-solid fa-signal"></i>
+                                </div>
+                                <div class="col-8 text-start">
+                                    <p>Signals</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="row hover">
+                                <div class="col-4 text-end">
+                                    <i class="fa-solid fa-gear"></i>
+                                </div>
+                                <div class="col-8 text-start">
+                                    <p>Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- main-content -->
