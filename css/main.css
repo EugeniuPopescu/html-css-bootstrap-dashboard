@@ -1,0 +1,32 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --sidebar-width: 10rem;
+    --sidebar-color: rgb(0, 0, 30);
+
+}
+
+.wrapper {
+    height: 100vh;
+    background: white;
+}
+
+main {
+    height: 100%;
+    display: flex;
+}
+
+main > #sidebar {
+    background: var(--sidebar-color);
+    height: 100%;
+    width: var(--sidebar-width);
+    background-image: url(../img/sidebar-bg.png);
+    background-size: contain;
+}
+
+main > #main-content {
+    height: 100%;
+    width: calc(100% - var(--sidebar-width));
+}
