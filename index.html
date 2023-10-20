@@ -62,28 +62,17 @@
                                         <i class="fa-solid fa-ellipsis-vertical me-1-"></i>
                                     </a>
                                 </li>
-                                <!-- <li class="dropdown-center">
-                                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-bell" style="color: #ff7b00;"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li> -->
 
-                                <div class="dropdown-center">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-bell" style="color: #ff7b00;"></i>
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu  dropdown-menu-end">
                                       <li><a class="dropdown-item" href="#">Profilo</a></li>
                                       <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                                       <li><a class="dropdown-item" href="#">Logout</a></li>
                                     </ul>
-                                  </div>
+                                </div>
                             </ul>
                         </div>
                     </div>
@@ -142,6 +131,299 @@
                 <!-- main-content -->
                 <section id="main-content">
 
+                    <!-- main-header -->
+                    <div class="container-fluid text-bg-primary ">
+                        <div class="row">
+                            <div class="col-12 mt-2">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span class="fs-2">Boolean</span>   
+                                                <span class="badge rounded-pill my-text-bg-primary">Piano blaze</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span class="badge rounded-pill my-text-bg-primary">3 app</span>
+                                                <i class="fa-solid fa-angles-right"></i>
+                                                <span class="badge rounded-pill my-text-bg-primary">Boolean mobile app</span>
+                                                <span class="badge rounded-pill my-text-bg-primary">Boolean web app</span>
+                                                <span class="badge rounded-pill my-text-bg-primary">Boolean blog app</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mt-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span>Studenti online negli ultimi 30 minuti</span>
+                                            </div>
+                                            <div class="col-12">
+                                                <p class="fs-2">125</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 mt-3">
+                                        <span>Nuovo Studente</span>
+                                        
+                                        <button class="btn btn-primary ms-2" style="border: 1px solid white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                ...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- main-main -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <!-- card prossime classi -->
+                                <div class="card my-4" style="width: 100%;">
+                                    <div class="card-header">
+                                    <span class="fs-3">Prossime classi</span>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="width: 15em;">
+                                                            <span class="fw-bold">Nome</span>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <span class="fw-bold">Data inizio</span>
+                                                        </th>
+                                                        <th scope="col"">
+                                                            <span class="fw-bold">ROI</span>
+                                                        </th>
+                                                        <th scope="col">
+                                                            <span class="fw-bold">Stato</span>
+                                                        </th>
+                                                        <th scope="col"  style="width: 7em;">
+                                                            <span class="fw-bold">Azioni</span>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="col" style="width: 20em;">
+                                                            <img style="width: 2em;" src="./img/class-avatar.jpg" alt="">
+                                                            <span class="ms-2">Classe 75</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span>15 Feb 2021</span>
+                                                        </td>
+                                                        <td scope="col" >
+                                                            <span>20%</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-pen"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td scope="col" style="width: 20em;">
+                                                            <img style="width: 2em;" src="./img/class-avatar.jpg" alt="">
+                                                            <span class="ms-2">Classe 75</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span>15 Feb 2021</span>
+                                                        </td>
+                                                        <td scope="col" >
+                                                            <span>20%</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-pen"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- tr 3 -->
+                                                    <tr>
+                                                        <td scope="col" style="width: 20em;">
+                                                            <img style="width: 2em;" src="./img/class-avatar.jpg" alt="">
+                                                            <span class="ms-2">Classe 77</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span>17 Feb 2021</span>
+                                                        </td>
+                                                        <td scope="col" >
+                                                            <span>20%</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span class="badge my-text-bg-warning">process</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-pen"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- tr 4 -->
+                                                    <tr>
+                                                        <td scope="col" style="width: 20em;">
+                                                            <img style="width: 2em;" src="./img/class-avatar.jpg" alt="">
+                                                            <span class="ms-2">Classe 78</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span>18 Feb 2021</span>
+                                                        </td>
+                                                        <td scope="col" >
+                                                            <span>20%</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-pen"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- tr 5 -->
+                                                    <tr>
+                                                        <td scope="col" style="width: 20em;">
+                                                            <img style="width: 2em;" src="./img/class-avatar.jpg" alt="">
+                                                            <span class="ms-2">Classe 79</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span>19 Feb 2021</span>
+                                                        </td>
+                                                        <td scope="col" >
+                                                            <span>20%</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span class="badge text-bg-danger">failed</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-pen"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- tr 6 -->
+                                                    <tr>
+                                                        <td scope="col" style="width: 20em;">
+                                                            <img style="width: 2em;" src="./img/class-avatar.jpg" alt="">
+                                                            <span class="ms-2">Classe 80</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span>20 Feb 2021</span>
+                                                        </td>
+                                                        <td scope="col" >
+                                                            <span>20%</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-pen"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- tr 7 -->
+                                                    <tr>
+                                                        <td scope="col" style="width: 20em;">
+                                                            <img style="width: 2em;" src="./img/class-avatar.jpg" alt="">
+                                                            <span class="ms-2">Classe 81</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span>21 Feb 2021</span>
+                                                        </td>
+                                                        <td scope="col" >
+                                                            <span>20%</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span class="badge text-bg-danger">failed</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-pen"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- tr 8 -->
+                                                    <tr>
+                                                        <td scope="col" style="width: 20em;">
+                                                            <img style="width: 2em;" src="./img/class-avatar.jpg" alt="">
+                                                            <span class="ms-2">Classe 82</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span>2 Feb 2021</span>
+                                                        </td>
+                                                        <td scope="col" >
+                                                            <span>20%</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td scope="col">
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-pen"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-light" style="border: 1px solid gray;">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>                                            
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- card FAQ -->
+                                
+                            </div>
+                            <div class="col-md-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur porro dignissimos nisi pariatur voluptatum earum, saepe nam laboriosam maiores eaque, omnis ipsum non doloremque optio sed fuga, repellendus enim?
+
+                                lorem*100
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
 

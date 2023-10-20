@@ -3,8 +3,8 @@ body {
 }
 
 :root {
-    --sidebar-width: 12vw;
-    --sidebar-color: rgb(1, 1, 80);
+    --sidebar-width: 10rem;
+    --sidebar-color: #112236;
 }
 
 .wrapper {
@@ -33,4 +33,5 @@ main > #sidebar {
 main > #main-content {
     height: 100%;
     width: calc(100% - var(--sidebar-width));
+    overflow-y: auto;
 }
