@@ -3,7 +3,7 @@ body {
 }
 
 :root {
-    --sidebar-width: 10rem;
+    --sidebar-width: 8rem;
     --sidebar-color: #112236;
 }
 
@@ -34,4 +34,5 @@ main > #main-content {
     height: 100%;
     width: calc(100% - var(--sidebar-width));
     overflow-y: auto;
+    background-color: rgb(241, 241, 241);
 }
