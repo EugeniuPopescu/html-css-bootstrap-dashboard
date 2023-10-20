@@ -35,4 +35,5 @@ main > #main-content {
     width: calc(100% - var(--sidebar-width));
     overflow-y: auto;
     background-color: rgb(241, 241, 241);
+    padding-bottom: 1.5em;
 }
