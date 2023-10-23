@@ -34,6 +34,11 @@ main > #main-content {
     padding-bottom: 1.5em;
 }
 
+/* offcanvas size */
+.my-size-md { /* add Responsivenes to default offcanvas */
+    width: 65vw !important;
+}
+
 /* COLLASSO NAVBAR LATERALE */
 @media screen and (max-width: 768px) {
     :root {
@@ -70,6 +75,11 @@ main > #main-content {
         overflow-y: auto;
         background-color: rgb(241, 241, 241);
         padding-bottom: 1.5em;
+    }
+
+    /* offcanvas size */
+    .my-size-md { /* add Responsivenes to default offcanvas */
+        width: 100vw !important;
     }
 }
 
